@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+*,*::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background-image: radial-gradient(circle at top,hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.score-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 150px;
+    margin-top: 3.5rem;
+    border-radius: 15px;
+    border: 3px solid hsl(217, 16%, 45%);
+    padding: 20px;
+}
+
+.score {
+    display: flex;
+    padding: 10px;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    width: 9rem;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.score-heading {
+    color: hsl(229, 64%, 46%);
+    letter-spacing: 1.5px;
+}
+
+.score-number {
+    color: hsl(229, 25%, 31%);
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.game-container {
+    margin-top: 8rem;
+    height: 300px;
+    width: 100%;
+    background: url(./images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.game-container img {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    padding: 20px;
+    background-color: azure;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.paper{
+    left: 37%;
+    
+}
+
+.scissors{
+    right: 37%;
+}
+
+.rock {
+    left: 46%;
+    top: 70%;
+}
+
