@@ -58,37 +58,133 @@ body {
     font-weight: 700;
 }
 
-.game-container {
+.game-container-step-1 {
     margin-top: 8rem;
-    height: 300px;
+    height: 400px;
     width: 100%;
     background: url(./images/bg-triangle.svg);
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.game-container img {
-    position: absolute;
-    height: 125px;
-    width: 125px;
-    padding: 20px;
-    background-color: azure;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-.paper{
-    left: 37%;
+    display: none;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    justify-items: center;
     
 }
 
-.scissors{
-    right: 37%;
+.game-container-step-2 {
+    margin-top: 8rem;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.blank-turn {
+    background-color: black;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    opacity: 0.15;
+}
+
+
+
+.grid-21{
+    grid-column: span 2;
+}
+
+
+.turn-border {
+    height: 175px;
+    width: 175px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.r1p1 {
+    background: linear-gradient(to top, hsl(230, 89%, 62%),hsl(230, 89%, 65%));
+}
+
+.r1p2 {
+    background: linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.r2 {
+    background: linear-gradient(to top, hsl(349, 71%, 52%),hsl(349, 70%, 56%));
+    
+}
+
+.turn {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65% auto;
+    
+}
+
+.paper {
+    background-image: url(./images/icon-paper.svg);
+    
+}
+
+.scissors {
+    background-image: url(./images/icon-scissors.svg);
 }
 
 .rock {
-    left: 46%;
-    top: 70%;
+    background-image: url(./images/icon-rock.svg);
+    
 }
 
+.result {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    gap: 20px;
+}
+
+
+
+.play-again {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    cursor: pointer;
+    
+}
