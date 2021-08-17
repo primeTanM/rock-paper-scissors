@@ -9,6 +9,8 @@
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
   <link rel="stylesheet" href="styles.css">
 
+  <script defer src="script.js"></script>
+
 </head>
 <body>
   <div class="container">
@@ -22,15 +24,15 @@
           SCORE
         </div>
         <div class="score-number">
-          12
+          0
         </div>
       </div>
     </div>
 
     <div class="game-container-step-1">
-      <div id="picks" class="grid-11"><div class="turn-border r1p1"><div class="turn paper"></div></div></div>
-      <div id="picks" class="grid-12"><div class="turn-border r1p2"><div class="turn scissors"></div></div></div>
-      <div id="picks" class="grid-21"><div class="turn-border r2"><div class="turn rock"></div></div></div>
+      <div id="picks" class="paper"><div class="turn-border r1p1"><div class="turn p"></div></div></div>
+      <div id="picks" class="scissor"><div class="turn-border r1p2"><div class="turn s"></div></div></div>
+      <div id="picks" class="rock"><div class="turn-border r2"><div class="turn r"></div></div></div>
     </div>
 
     <div class="game-container-step-2">
@@ -43,7 +45,7 @@
         </div>
       </div>
       <div class="flexin-wrapper result">
-        <div>You Win</div>
+        <div class="result-text">You Win</div>
         <div class="play-again"><p>Play Again</p></div>
       </div>
       <div class="flex-wrapper">

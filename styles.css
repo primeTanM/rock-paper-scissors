@@ -65,7 +65,7 @@ body {
     background: url(./images/bg-triangle.svg);
     background-repeat: no-repeat;
     background-position: center;
-    display: none;
+    /* display: none; */
     display: grid;
     grid-template-columns: 300px 300px;
     justify-content: center;
@@ -77,7 +77,7 @@ body {
     margin-top: 8rem;
     height: 400px;
     width: 100%;
-    display: flex;
+    /* display: flex; */
     display: none;
     justify-content: center;
     align-items: center;
@@ -106,7 +106,7 @@ body {
 
 
 
-.grid-21{
+.rock{
     grid-column: span 2;
 }
 
@@ -147,16 +147,16 @@ body {
     
 }
 
-.paper {
+.p {
     background-image: url(./images/icon-paper.svg);
     
 }
 
-.scissors {
+.s {
     background-image: url(./images/icon-scissors.svg);
 }
 
-.rock {
+.r {
     background-image: url(./images/icon-rock.svg);
     
 }
