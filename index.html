@@ -30,17 +30,17 @@
     </div>
 
     <div class="game-container-step-1">
-      <div id="picks" class="paper"><div class="turn-border r1p1"><div class="turn p"></div></div></div>
-      <div id="picks" class="scissor"><div class="turn-border r1p2"><div class="turn s"></div></div></div>
-      <div id="picks" class="rock"><div class="turn-border r2"><div class="turn r"></div></div></div>
+      <div id="picks" class="paper"><div class="turn-border paper-border"><div class="turn p"></div></div></div>
+      <div id="picks" class="scissor"><div class="turn-border scissor-border"><div class="turn s"></div></div></div>
+      <div id="picks" class="rock"><div class="turn-border rock-border"><div class="turn r"></div></div></div>
     </div>
 
     <div class="game-container-step-2">
       <div class="flex-wrapper">
         <div>You Picked</div>
         <div class="your-pick">
-          <div class="turn-border r1p1">
-            <div class="turn paper"></div>
+          <div id="your-pick-border" class="turn-border">
+            <div id="your-pick-turn" class="turn"></div>
           </div>
         </div>
       </div>
@@ -50,14 +50,15 @@
       </div>
       <div class="flex-wrapper">
         <div>The House Picked</div>
-        <div class="house-pick">
-          <div class="blank-turn"></div>
-          <!-- <div class="turn-border r2"><div class="turn rock"></div></div></div> -->
+        <div id="house-pick-border" class="turn-border" >
+          <!-- <div id="house-pick-turn" class="blank-turn"></div> -->
+          <div id="house-pick-turn" class="turn"></div>
         </div>
       </div>
     </div>
   </div>  
 
+  <!-- class="turn-border" -->
 
 
   <!-- <div class="attribution">
