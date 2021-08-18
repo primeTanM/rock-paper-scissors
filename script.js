@@ -18,15 +18,15 @@ let count = 0;
 
 picks.forEach(btn => {
     btn.addEventListener("click", () => {
-        let first = setInterval(() => {
-            turnBorder.style.display="none";
-            housePickBorder.classList.remove("turn");
-            housePickBorder.classList.add("blank-turn");
+        // let first = setInterval(() => {
+        //     turnBorder.style.display="none";
+        //     housePickBorder.classList.remove("turn");
+        //     housePickBorder.classList.add("blank-turn");
             
             
-        },3000);
+        // },3000);
 
-        clearInterval(first);
+        // clearInterval(first);
 
         stepOne.style.display="none";
         stepTwo.style.display="flex";
@@ -43,6 +43,7 @@ picks.forEach(btn => {
 
 playAgain.addEventListener('click', () => {
     stepOne.style.display="grid";
+    stepTwo.style.display="none";
     yourPickBorder.classList.remove(yourPick + '-border');
     yourPickTurn.classList.remove(yourPick.split('')[0]);
     housePickBorder.classList.remove(housePick + '-border');
