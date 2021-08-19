@@ -36,7 +36,7 @@
     </div>
 
     <div class="game-container-step-2">
-      <div class="flex-wrapper">
+      <div class="flex-wrapper grid1">
         <div>You Picked</div>
         <div class="your-pick">
           <div id="your-pick-border" class="turn-border">
@@ -48,7 +48,7 @@
         <div class="result-text">You Win</div>
         <div class="play-again"><p>Play Again</p></div>
       </div>
-      <div class="flex-wrapper">
+      <div class="flex-wrapper grid2">
         <div>The House Picked</div>
         <div id="house-pick-border" class="turn-border" >
           <!-- <div id="house-pick-turn" class="blank-turn"></div> -->
@@ -58,8 +58,23 @@
     </div>
   </div>  
 
-  <!-- class="turn-border" -->
+  <div class="footer">
+    <div id="reset-btn"><p>RESET</p></div>
+    <div id="rules-btn"><p>RULES</p></div> 
+  </div>
 
+  <div id ="modal" class="rules-card-bg">
+    <div class="rules-card">
+      <div class="rules-header">
+        <p>RULES</p>
+        <img class="close-btn" src="./images/icon-close.svg" alt="">
+      </div>
+      <div class="rules-img">
+        <img src="./images/image-rules.svg" alt="">
+      </div>
+      
+    </div>
+  </div>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

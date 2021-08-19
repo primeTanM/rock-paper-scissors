@@ -9,6 +9,7 @@ let yourPickTurn = document.getElementById("your-pick-turn");
 let housePickBorder = document.getElementById("house-pick-border");
 let housePickTurn = document.getElementById("house-pick-turn");
 let playAgain = document.querySelector('.play-again');
+let resetBtn = document.getElementById('reset-btn');
 
 let yourPick;
 let randomNumber;
@@ -18,18 +19,18 @@ let count = 0;
 
 picks.forEach(btn => {
     btn.addEventListener("click", () => {
-        // let first = setInterval(() => {
-        //     turnBorder.style.display="none";
-        //     housePickBorder.classList.remove("turn");
-        //     housePickBorder.classList.add("blank-turn");
+        let first = setInterval(() => {
+            turnBorder.style.display="none";
+            housePickBorder.classList.remove("turn");
+            housePickBorder.classList.add("blank-turn");
             
             
-        // },3000);
+        },3000);
 
-        // clearInterval(first);
+        clearInterval(first);
 
         stepOne.style.display="none";
-        stepTwo.style.display="flex";
+        stepTwo.style.display="grid";
         yourPick = (btn.className);
         console.log(yourPick);
         yourPickBorder.classList.add(yourPick + '-border');
@@ -41,7 +42,9 @@ picks.forEach(btn => {
     })
 })
 
-playAgain.addEventListener('click', () => {
+playAgain.addEventListener('click', restart);
+
+function restart(){
     stepOne.style.display="grid";
     stepTwo.style.display="none";
     yourPickBorder.classList.remove(yourPick + '-border');
@@ -50,10 +53,7 @@ playAgain.addEventListener('click', () => {
     housePickTurn.classList.remove(housePick.split('')[0]);
     yourPick = "";
     housePick = "";
-    
-    console.log(yourPick);
-    console.log(housePick);
-})
+}
 
 
 function decideWinnner(){
@@ -108,4 +108,23 @@ function updateScore(){
     score.innerText = count;
 
 }
+
+
+resetBtn.addEventListener('click', () => {
+    restart();
+    score.innerText = 0;
+})
+//rules-modal
+
+var modal = document.getElementById('modal');
+var rulesBtn = document.getElementById('rules-btn');
+var closeBtn = document.querySelector('.close-btn');
+
+rulesBtn.addEventListener('click', () => {
+    modal.style.display = "block";
+})
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = "none";
+})
 
